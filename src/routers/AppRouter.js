@@ -15,7 +15,7 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <PublicRoute path='/' component={LoginPage} exact={true} />
-                <PrivateRoute path='/dashboard' component={ExpenseDashboardPage} />
+                <PrivateRoute path='/dashboard' component={DashboardPage} />
                 {/* using a parameter like :id looks for anything after the / and can render a page accordingly  */}
                 <Route component={NotFoundPage} />
             </Switch>
